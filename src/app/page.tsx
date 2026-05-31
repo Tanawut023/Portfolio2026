@@ -46,7 +46,7 @@ const skillGroups: SkillGroup[] = [
   },
   {
     title: "Tools",
-    items: ["Git", "GitHub", "GitLab", "Jira", "Confluence", "Jenkins", "Docker", "Postman"],
+    items: ["Git", "GitHub", "GitLab", "Jira", "Confluence", "Jenkins", "Docker", "Postman", "Vercel"],
   },
   {
     title: "AI Tools",
@@ -57,7 +57,7 @@ const skillGroups: SkillGroup[] = [
 const experiences: Experience[] = [
   {
     company: "FWD Life Insurance Public Co., Ltd.",
-    period: "2023 Jan - Mar",
+    period: "2023 Jan - 2026 Mar",
     role: {
       en: "Specialized Developer",
       th: "Specialized Developer",
