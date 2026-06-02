@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-01T00:00:00+07:00",
+  "title": "Design System: Tanawut Portfolio 2026",
+  "extensions": {
+    "colorMeta": {
+      "background-dark": {
+        "role": "neutral",
+        "displayName": "Deep Night Surface",
+        "canonical": "#07111f",
+        "tonalRamp": ["#07111f", "#0b1627", "#112034"]
+      },
+      "foreground-dark": {
+        "role": "neutral",
+        "displayName": "Calm Foreground",
+        "canonical": "#ecf7ff",
+        "tonalRamp": ["#d8e7f3", "#ecf7ff", "#ffffff"]
+      },
+      "accent-dark": {
+        "role": "primary",
+        "displayName": "Signal Cyan",
+        "canonical": "#5ad5ff",
+        "tonalRamp": ["#1fb7e5", "#5ad5ff", "#9be9ff"]
+      },
+      "background-light": {
+        "role": "neutral",
+        "displayName": "Cool Light Surface",
+        "canonical": "#f4f7fb",
+        "tonalRamp": ["#e8eef6", "#f4f7fb", "#ffffff"]
+      },
+      "accent-light": {
+        "role": "primary",
+        "displayName": "Link Cyan",
+        "canonical": "#0ea5e9",
+        "tonalRamp": ["#0284c7", "#0ea5e9", "#7dd3fc"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero name and identity."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Descriptions, about copy, and supporting detail."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Metadata, chips, and section markers."
+      }
+    },
+    "shadowMeta": {
+      "heroLift": "0 20px 80px rgba(0,0,0,0.24)",
+      "sectionLift": "0 24px 70px rgba(0,0,0,0.16)",
+      "cardLift": "0 20px 50px rgba(0,0,0,0.22)"
+    },
+    "motionMeta": {
+      "entrance": "fade-up 700ms ease-out",
+      "hover": "220ms ease",
+      "themeTransition": "450ms ease-out"
+    },
+    "breakpoints": {
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px"
+    },
+    "rules": [
+      "Accent rarity is part of the voice.",
+      "Depth stays soft and tonal.",
+      "Motion supports state and reveal, not decoration.",
+      "Bilingual content must stay structurally aligned."
+    ],
+    "do": [
+      "Reserve cyan for interaction and state.",
+      "Keep the same layout vocabulary in dark and light modes.",
+      "Use rounded surfaces, subtle borders, and modest shadow blur."
+    ],
+    "dont": [
+      "Don't use a generic SaaS landing page structure.",
+      "Don't turn the site into a flashy portfolio template.",
+      "Don't make the developer aesthetic feel like costume design."
+    ]
+  }
+}

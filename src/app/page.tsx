@@ -46,7 +46,7 @@ const skillGroups: SkillGroup[] = [
   },
   {
     title: "Tools",
-    items: ["Git", "GitHub", "GitLab", "Jira", "Confluence", "Jenkins", "Docker", "Postman", "Vercel"],
+    items: ["Git/GitHub", "GitLab", "Jira", "Confluence", "Jenkins", "Docker", "Postman", "Vercel"],
   },
   {
     title: "AI Tools",
@@ -190,8 +190,8 @@ const projects: Project[] = [
       th: "ส่งมอบแอปฝั่ง client, พัฒนา responsive UI จาก design ที่ได้รับ และเก็บ feedback ระหว่างการส่งงาน.",
     },
     impact: {
-      en: "Helped the team ship a cleaner client experience with a more reliable release process.",
-      th: "ช่วยให้ทีมส่งมอบประสบการณ์ใช้งานที่ดีขึ้น และทำให้กระบวนการ release น่าเชื่อถือมากขึ้น.",
+      en: "Helped improve the team's coding practices and build scalable solutions.",
+      th: "ช่วยให้ทีมเขียนโค้ดใช้งานที่ดีขึ้น และรองรับการทำงานแบบ scale.",
     },
     stack: ["Angular", "HTML", "CSS", "JavaScript"],
   },
@@ -218,7 +218,7 @@ const translations = {
     },
     about: {
       title: "About",
-      body: "I am a software developer with experience across insurance systems, CMS delivery, frontend implementation, and production support. I enjoy turning business requirements into predictable UI and system flows, and I care about code quality, collaboration, and on-time delivery.",
+      body: "Full Stack Developer with a background in Application Support and software development. Experienced in troubleshooting complex systems, analyzing business requirements, and building web applications using modern technologies. Passionate about writing clean, maintainable code and designing scalable solutions that support long-term business growth. Continuously learning new technologies and best practices to deliver high-quality software and improve development processes.",
     },
     skills: {
       title: "Skills",
@@ -245,7 +245,7 @@ const translations = {
   th: {
     nav: {
       about: "เกี่ยวกับ",
-      skills: "สกิล",
+      skills: "ทักษะ",
       experience: "ประสบการณ์",
       projects: "โปรเจกต์",
       contact: "ติดต่อ",
@@ -254,7 +254,7 @@ const translations = {
       eyebrow: "พอร์ตโฟลิโอ / Software Developer",
       title: "Tanawut Rungpetnimit",
       subtitle: "Software Developer ที่มีประสบการณ์ด้าน insurance system และให้ความสำคัญกับงานที่เสถียร อ่านง่าย และส่งมอบได้จริง",
-      note: "ผมชอบสร้าง interface ที่สงบ ใช้งานง่าย และคิดแบบงานองค์กร",
+      note: "ผมชอบสร้าง interface ที่เรียบง่าย ใช้งานง่าย และคิดแบบงานองค์กร",
     },
     buttons: {
       download: "ดาวน์โหลดเรซูเม่",
@@ -262,19 +262,19 @@ const translations = {
     },
     about: {
       title: "เกี่ยวกับ",
-      body: "ผมเป็น software developer ที่มีประสบการณ์ทั้งด้าน insurance system, CMS delivery, frontend implementation และ production support ผมชอบแปลง business requirement ให้กลายเป็น UI และ system flow ที่คาดเดาได้ และให้ความสำคัญกับคุณภาพโค้ด การทำงานร่วมกับทีม และการส่งมอบตรงเวลา",
+      body: "นักพัฒนาซอฟต์แวร์ที่มีประสบการณ์ด้าน Application Support และการพัฒนาระบบ มีความเชี่ยวชาญในการวิเคราะห์ปัญหา แก้ไขเหตุขัดข้องของระบบ และพัฒนา Web Application ด้วยเทคโนโลยี Full Stack สนใจการออกแบบระบบที่มีคุณภาพ ดูแลรักษาง่าย และรองรับการขยายตัวในอนาคต มุ่งมั่นเรียนรู้เทคโนโลยีใหม่ ๆ และพัฒนาทักษะอย่างต่อเนื่องเพื่อสร้างซอฟต์แวร์ที่ตอบโจทย์ทั้งผู้ใช้งานและธุรกิจ",
     },
     skills: {
-      title: "สกิล",
+      title: "ทักษะ",
       subtitle: "Tools in regular rotation.",
     },
     experience: {
       title: "ประสบการณ์",
-      subtitle: "ไทม์ไลน์อาชีพจาก resume ที่คุณส่งมา",
+      subtitle: "ไทม์ไลน์อาชีพ",
     },
     projects: {
       title: "โปรเจกต์",
-      subtitle: "มุมมองผลงานที่ผสมระหว่างงานองค์กรและงานฝั่ง frontend",
+      subtitle: "ผลงานงานฝั่ง frontend และงานองค์กร",
       impact: "ผลลัพธ์ / Impact",
       tech: "เทคโนโลยี",
     },
@@ -328,10 +328,42 @@ function GlobeIcon() {
   );
 }
 
+function PinIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4">
+      <path
+        d="M12 22s5-4.7 5-10a5 5 0 1 0-10 0c0 5.3 5 10 5 10Z"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.8"
+      />
+      <circle cx="12" cy="12" r="1.8" fill="currentColor" />
+    </svg>
+  );
+}
+
 function ArrowIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4">
       <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" />
+    </svg>
+  );
+}
+
+function MenuIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4">
+      <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="1.8" />
+    </svg>
+  );
+}
+
+function CloseIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4">
+      <path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="1.8" />
     </svg>
   );
 }
@@ -346,6 +378,7 @@ export default function Home() {
   const [locale, setLocale] = useState<Locale>("en");
   const [theme, setTheme] = useState<Theme>("dark");
   const [activeSection, setActiveSection] = useState<string>("about");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const raf = window.requestAnimationFrame(() => {
@@ -458,8 +491,22 @@ export default function Home() {
       <div className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col px-4 py-4 sm:px-6 lg:px-8">
         <header className="sticky top-4 z-20 animate-fade-up" style={{ animationDelay: "40ms" }}>
           <div data-reveal style={revealStyle("0ms")} className={`${fadeUpClassName} glass-panel hover-lift flex flex-col gap-4 rounded-3xl px-4 py-4 shadow-[0_20px_80px_rgba(0,0,0,0.24)] backdrop-blur-xl sm:flex-row sm:items-center sm:justify-between`}>
-            <div>
-              <h1 className=" text-lg font-semibold sm:text-xl">{copy.hero.title}</h1>
+            <div className="flex items-center justify-between gap-3 md:block">
+              <h1 className="text-lg font-semibold sm:text-xl">
+                <a href="#" onClick={() => setIsMobileMenuOpen(false)}>
+                  {copy.hero.title}
+                </a>
+              </h1>
+              <button
+                type="button"
+                onClick={() => setIsMobileMenuOpen((current) => !current)}
+                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border border-subtle bg-surface text-primary transition duration-200 hover:bg-surface-2 hover:text-accent md:hidden"
+                aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+                aria-expanded={isMobileMenuOpen}
+                aria-controls="mobile-navigation"
+              >
+                {isMobileMenuOpen ? <CloseIcon /> : <MenuIcon />}
+              </button>
             </div>
             <div className="flex flex-wrap items-center gap-2">
               <nav className="hidden items-center gap-1 rounded-full border border-subtle bg-surface-2 px-2 py-1 md:flex">
@@ -468,11 +515,10 @@ export default function Home() {
                     key={item.key}
                     href={item.href}
                     aria-current={activeSection === item.key ? "page" : undefined}
-                    className={`relative rounded-full px-3 py-2 text-sm text-secondary transition duration-200 hover:bg-surface hover:text-[#5ad5ff] ${
-                      activeSection === item.key
+                    className={`relative rounded-full px-3 py-2 text-sm text-secondary transition duration-200 hover:bg-surface hover:text-[#5ad5ff] ${activeSection === item.key
                         ? "text-primary after:absolute after:inset-x-3 after:-bottom-0.5 after:h-px after:rounded-full after:bg-[#5ad5ff]"
                         : ""
-                    }`}
+                      }`}
                   >
                     {item.label}
                   </a>
@@ -481,7 +527,10 @@ export default function Home() {
               <div className="flex items-center gap-2">
                 <button
                   type="button"
-                  onClick={() => setLocale((current) => (current === "en" ? "th" : "en"))}
+                  onClick={() => {
+                    setLocale((current) => (current === "en" ? "th" : "en"));
+                    setIsMobileMenuOpen(false);
+                  }}
                   className="hover-lift inline-flex items-center gap-2 rounded-full border border-subtle bg-surface px-4 py-2 text-sm font-medium text-primary hover:shadow-[0_0_0_1px_rgba(56,189,248,0.18)]"
                   aria-label="Toggle language"
                 >
@@ -490,7 +539,10 @@ export default function Home() {
                 </button>
                 <button
                   type="button"
-                  onClick={() => setTheme((current) => (current === "dark" ? "light" : "dark"))}
+                  onClick={() => {
+                    setTheme((current) => (current === "dark" ? "light" : "dark"));
+                    setIsMobileMenuOpen(false);
+                  }}
                   className="hover-lift inline-flex items-center gap-2 rounded-full border border-subtle bg-surface px-4 py-2 text-sm font-medium text-primary"
                   aria-label="Toggle theme"
                 >
@@ -499,6 +551,28 @@ export default function Home() {
                 </button>
               </div>
             </div>
+            <nav
+              id="mobile-navigation"
+              className={`grid gap-2 overflow-hidden rounded-2xl border border-subtle bg-surface-2 p-3 transition-all duration-300 md:hidden ${isMobileMenuOpen ? "max-h-80 opacity-100" : "pointer-events-none max-h-0 border-transparent p-0 opacity-0"
+                }`}
+              aria-label="Mobile navigation"
+            >
+              {navItems.map((item) => (
+                <a
+                  key={item.key}
+                  href={item.href}
+                  aria-current={activeSection === item.key ? "page" : undefined}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`flex min-h-11 items-center justify-between rounded-xl border px-4 py-3 text-sm transition duration-200 ${activeSection === item.key
+                      ? "border-accent bg-accent/12 text-primary"
+                      : "border-subtle bg-surface text-secondary hover:bg-surface-2 hover:text-primary"
+                    }`}
+                >
+                  <span>{item.label}</span>
+                  <span className="text-xs text-accent">{activeSection === item.key ? "Current" : ""}</span>
+                </a>
+              ))}
+            </nav>
           </div>
         </header>
 
@@ -520,7 +594,8 @@ export default function Home() {
                       className="object-cover object-center transition duration-500 group-hover:scale-[1.04]"
                     />
                   </div>
-                  <div className="rounded-full border border-accent bg-surface-2 px-4 py-2 text-sm text-accent transition duration-300 hover:translate-y-[-1px] hover:shadow-[0_0_0_1px_rgba(90,213,255,0.22)]">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-accent bg-surface-2 px-4 py-2 text-sm text-accent transition duration-300 hover:translate-y-[-1px] hover:shadow-[0_0_0_1px_rgba(90,213,255,0.22)]">
+                    <PinIcon />
                     Based in Bangkok, Thailand
                   </div>
                 </div>
@@ -554,11 +629,11 @@ export default function Home() {
               </div>
             </div>
 
-            <section id="about" data-reveal style={revealStyle("80ms")} className={`${fadeUpClassName} section-card`}>
+            <section id="about" data-reveal style={revealStyle("80ms")} className={`${fadeUpClassName} section-card scroll-mt-28 lg:scroll-mt-32`}>
               <SectionHeading title={copy.about.title} subtitle={copy.about.body} />
             </section>
 
-            <section id="skills" data-reveal style={revealStyle("120ms")} className={`${fadeUpClassName} section-card`}>
+            <section id="skills" data-reveal style={revealStyle("120ms")} className={`${fadeUpClassName} section-card scroll-mt-28 lg:scroll-mt-32`}>
               <SectionHeading title={copy.skills.title} subtitle={copy.skills.subtitle} />
               <div className="mt-6 grid gap-4">
                 {skillGroups.map((group, index) => (
@@ -585,44 +660,59 @@ export default function Home() {
                 ))}
               </div>
             </section>
-            <section id="experience" data-reveal style={revealStyle("140ms")} className={`${fadeUpClassName} section-card`}>
+            <section id="experience" data-reveal style={revealStyle("140ms")} className={`${fadeUpClassName} section-card scroll-mt-28 lg:scroll-mt-32`}>
               <SectionHeading title={copy.experience.title} subtitle={copy.experience.subtitle} />
-              <div className="mt-6 space-y-6">
+              <div className="relative mt-6 pb-12">
+                <div className="absolute left-[1.1rem] top-0 bottom-0 w-px bg-border-line md:left-1/2 md:-translate-x-1/2" />
                 {experiences.map((item, index) => (
-                  <article key={`${item.company}-${item.period}`} className="relative pl-6">
-                    <span className="absolute left-0 top-2 h-3 w-3 rounded-full bg-accent shadow-[0_0_0_5px_rgba(56,189,248,0.16)]" />
-                    {index !== experiences.length - 1 ? (
-                      <span className="absolute left-[5px] top-5 h-full w-px bg-border-line" />
-                    ) : null}
-                    <div
-                      data-reveal
-                      style={revealStyle(`${180 + index * 120}ms`)}
-                      className={`${fadeUpClassName} hover-lift rounded-2xl border border-subtle bg-surface p-5`}
-                    >
-                      <div className="flex flex-wrap items-center justify-between gap-3">
-                        <div>
-                          <h3 className="text-lg font-semibold text-primary">{item.company}</h3>
-                          <p className="mt-1 text-sm text-accent">{item.role[locale]}</p>
+                  (() => {
+                    const yearLabel = item.period.match(/\d{4}/g)?.at(-1) ?? item.period;
+                    return (
+                      <article
+                        key={`${item.company}-${item.period}`}
+                        className="relative mb-12 grid gap-4 pl-12 md:grid-cols-[100px_1fr] md:gap-6 md:pl-0"
+                      >
+                        <div className="relative z-10 flex items-start md:col-start-1 md:row-start-1 md:justify-center">
+                          <div className="relative mt-12 flex items-center gap-1.5">
+                            <span className="h-4 w-4 shrink-0 rounded-full border-2 border-accent bg-app shadow-[0_0_0_5px_rgba(90,213,255,0.10)]" />
+                            <span className="rounded-full border border-accent/30 bg-accent/10 px-2.5 py-1 text-xs font-semibold tracking-[0.16em] text-accent">
+                              {yearLabel}
+                            </span>
+                          </div>
                         </div>
-                        <span className="rounded-full border border-subtle bg-surface-2 px-3 py-1 text-xs uppercase tracking-[0.24em] text-muted">
-                          {item.period}
-                        </span>
-                      </div>
-                      <ul className="mt-4 space-y-3 text-sm leading-6 text-secondary">
-                        {item.bullets[locale].map((bullet) => (
-                          <li key={bullet} className="flex gap-3">
-                            <span className="mt-[0.55rem] h-2.5 w-2.5 shrink-0 rounded-full bg-accent shadow-[0_0_0_3px_rgba(90,213,255,0.12)]" />
-                            <span>{bullet}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </article>
+                        <div className="md:col-start-2 md:row-start-1 md:pl-6 w-full">
+                          <div
+                            data-reveal
+                            style={revealStyle(`${180 + index * 120}ms`)}
+                            className={`${fadeUpClassName} hover-lift flex h-full max-w-[42rem] flex-col gap-5 rounded-2xl border border-subtle bg-surface p-5 sm:p-6 md:justify-self-start`}
+                          >
+                            <div className="flex flex-wrap items-start justify-between gap-4">
+                              <div>
+                                <h3 className="text-lg font-semibold text-primary">{item.company}</h3>
+                                <p className="mt-1 text-sm leading-6 text-accent">{item.role[locale]}</p>
+                              </div>
+                              <span className="rounded-full border border-subtle bg-surface-2 px-3 py-1 text-xs uppercase tracking-[0.24em] text-muted">
+                                {item.period}
+                              </span>
+                            </div>
+                            <ul className="space-y-3 text-sm leading-7 text-secondary">
+                              {item.bullets[locale].map((bullet) => (
+                                <li key={bullet} className="flex items-start gap-3">
+                                  <span className="mt-[0.58rem] h-2.5 w-2.5 shrink-0 rounded-full bg-accent shadow-[0_0_0_3px_rgba(90,213,255,0.12)]" />
+                                  <span>{bullet}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </article>
+                    );
+                  })()
                 ))}
               </div>
             </section>
 
-            <section id="projects" data-reveal style={revealStyle("160ms")} className={`${fadeUpClassName} section-card`}>
+            <section id="projects" data-reveal style={revealStyle("160ms")} className={`${fadeUpClassName} section-card scroll-mt-28 lg:scroll-mt-32`}>
               <SectionHeading title={copy.projects.title} subtitle={copy.projects.subtitle} />
               <div className="mt-6 space-y-4">
                 {projects.map((project, index) => (
@@ -655,7 +745,7 @@ export default function Home() {
           </div>
 
           <aside className="space-y-8">
-            <section id="contact" data-reveal style={revealStyle("180ms")} className={`${fadeUpClassName} section-card`}>
+            <section id="contact" data-reveal style={revealStyle("180ms")} className={`${fadeUpClassName} section-card scroll-mt-28 lg:scroll-mt-32`}>
               <SectionHeading title={copy.contact.title} subtitle={copy.contact.subtitle} />
               <div className="mt-6 space-y-3">
                 <ContactLink delay="220ms" label={copy.contact.email} value="tanawut913@gmail.com" href="mailto:tanawut913@gmail.com" />
